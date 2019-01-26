@@ -113,7 +113,7 @@ public class StepsWidget extends AbstractWidget {
 
             // Background
             if(settings.stepsProgBgBool) {
-                this.ring.setColor(Color.parseColor("#999999"));
+                this.ring.setColor(Color.parseColor("#000000"));
                 canvas.drawArc(oval, settings.stepsProgStartAngle, this.angleLength, false, ring);
             }
 
@@ -186,7 +186,7 @@ public class StepsWidget extends AbstractWidget {
             // Draw background image
             if(settings.stepsProgBgBool) {
                 SlptPictureView ring_background = new SlptPictureView();
-                ring_background.setImagePicture(SimpleFile.readFileFromAssets(service, ( (better_resolution)?"":"slpt_" )+"circles/ring1_bg.png"));
+                ring_background.setImagePicture(SimpleFile.readFileFromAssets(service, ( (better_resolution)?"":"slpt_" )+"circles/ring1_7.png"));
                 ring_background.setStart((int) (settings.stepsProgLeft-settings.stepsProgRadius), (int) (settings.stepsProgTop-settings.stepsProgRadius));
                 slpt_objects.add(ring_background);
             }

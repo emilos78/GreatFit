@@ -33,7 +33,7 @@ public class ResourceManager {
     public static Typeface getTypeFace(final Resources resources, final Font font) {
         Typeface typeface = TYPE_FACES.get(font);
         if (typeface == null) {
-            typeface = Typeface.createFromAsset(resources.getAssets(), font.path);
+            typeface = Typeface.create(Typeface.createFromAsset(resources.getAssets(), font.path), Typeface.BOLD);
             TYPE_FACES.put(font, typeface);
         }
         return typeface;
